@@ -1,0 +1,16 @@
+What is Node.js?
+Node.js is an open-source, cross-platform JavaScript runtime environment and library used to run web applications outside the client's browser. Ryan Dahl developed it in 2009, and the latest version, v13.8.0, was released on Jan. 30. Node.js is used to create server-side web applications and is perfect for data-intensive applications since it uses an asynchronous, event-driven model.
+Node.js Architecture
+Node.js uses the "Single Threaded Event Loop" architecture to handle multiple concurrent clients. The Node.js processing model is based on the JavaScript event-based model, along with the JavaScript callback mechanism.
+
+Clients send requests to Web Server.
+Requests can be:
+
+Querying for data
+Deleting data 
+Updating the data, etc.
+Node.js adds the requests to the Event Queue
+Event Loop checks if the requests are simple enough not to require any external resources
+Event Loop processes simple requests and returns the responses to the corresponding clients
+A single thread from Thread Pool is assigned to a single complex request
+Thread Pool performs the required task and returns the response to Event Loop, which in turn, returns the response to the client
