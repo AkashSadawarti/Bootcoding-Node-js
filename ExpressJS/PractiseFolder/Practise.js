@@ -19,7 +19,7 @@ router.get('/AdmissionsOk',(req,res)=>{
 }).get('/AdmissionsNo',(req,res) =>{
     count--;
     console.log('Your Admisssion is Cancelled...!')
-    res.send('Tula Admission tasahi dete kon')     
+    res.send('Not Eligible for Admission')     
 }).get('/countAdmissions',(req,res)=>{
     console.log('Admission Status');
     res.send('Total Admissions :' + count)
