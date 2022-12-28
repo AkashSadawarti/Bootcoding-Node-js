@@ -1,11 +1,15 @@
- //Bubble Sort
- 
-function getBubblesort(Array1){
- let min = Array1[0]
- for(let i=0;i<= Array1.length; i++){
-    if(min > Array1[i]){
-    }
- }
+//Bubble Sort
+
+function getBubblesort(Arr) {
+   for (let i = 0; i <= Arr.length; i++) {
+      for (let j = i + 1; j < Arr.length; j++) {
+         if(Arr[j]< Arr[i]){
+            [Arr[j],Arr[i]] = [Arr[i],Arr[j]]
+         }
+      }
+
+   }
+   return Arr;
 }
 
-console.log(getBubblesort([5,2,6,4,7,1]))
+console.log(getBubblesort([5, 2, 3, 4, 7, 1]));
