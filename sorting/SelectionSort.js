@@ -9,6 +9,7 @@ const getSelectionsort = (arr) => {
             }
         }
         if (lowestval != i) {
+     //Swaping logic
         [arr[i],arr[lowestval] ] = [arr[lowestval],arr[i]]
         }
 
