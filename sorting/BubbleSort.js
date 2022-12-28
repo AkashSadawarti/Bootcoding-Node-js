@@ -13,7 +13,9 @@ function getBubblesort(Arr) {
    return Arr;
 }
 
-console.log(getBubblesort([5, 2, 3, 4, 7, 1]));
+
+   let res1 = getBubblesort([5, 2, 3, 4, 7, 1]);
+   console.log(res1)
 
 //Conventional method for swaping would be
 
@@ -21,3 +23,18 @@ console.log(getBubblesort([5, 2, 3, 4, 7, 1]));
 // temp = Arr[j];
 // Arr[j] = Arr[i];
 // Arr[i] = temp;
+
+//Alternate way of buuble sort
+
+function bubbleSort(arr2){
+   for(let i=arr2.length;i>0;i--){
+      for(let j=0;j<i-1;j++){
+         if(arr2[j]>arr2[j+1]){
+            [arr2[j],arr2[j+1]] = [arr2[j+1],arr2[j]]
+         }
+      }
+   }
+   return arr2;
+}
+let res  = bubbleSort([5,1,9,8,6,77,0,4])
+console.log(res);
