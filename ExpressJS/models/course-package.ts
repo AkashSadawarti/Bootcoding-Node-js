@@ -1,3 +1,4 @@
+import { Course } from "./course";
 export class CoursePackage {
     id: bigint;
     packageName: string;
@@ -6,4 +7,5 @@ export class CoursePackage {
     createdBy: string;
     modifiedDate: Date;
     modifiedBy: string;
+    course : Course;
 }
