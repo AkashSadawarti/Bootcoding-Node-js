@@ -12,7 +12,13 @@ pool.connect(function(err) {
   console.log("Connected!");
 })
 
-
+pool.query(`SELECT * FROM student`,function(err,res) {
+  console.log(res,err)
+  console.log()
+  client.end()
+  if (err) throw err;
+  console.log("Connected!");
+})
 
 // client.getUsers = (request, response) => {
 //   pool.query('SELECT * FROM students', (error, results) => {
