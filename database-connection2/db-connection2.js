@@ -14,11 +14,11 @@ pool.connect(function(err) {
 
 
 
-client.getUsers = (request, response) => {
-  pool.query('SELECT * FROM students', (error, results) => {
-    if (error) {
-      throw error
-    }
-    response.status(200).json(results.rows)
-  })
-}
+// client.getUsers = (request, response) => {
+//   pool.query('SELECT * FROM students', (error, results) => {
+//     if (error) {
+//       throw error
+//     }
+//     response.status(200).json(results.rows)
+//   })
+// }
