@@ -15,7 +15,7 @@ pool.connect(function(err) {
 pool.query(`SELECT * FROM student`,function(err,res) {
   console.log(res,err)
   console.log()
-  client.end()
+  pool.end()
   if (err) throw err;
   console.log("Connected!");
 })
