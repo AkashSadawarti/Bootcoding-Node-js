@@ -17,7 +17,8 @@ console.log(getLastWeek())
 // Implement the BirdWatcher.getToday() method to return how many birds visited your garden today. The bird counts are ordered by day, with the first element being the count of the oldest day, and the last element being today's count.
 let birdsPerDay2 = [ 2, 5, 0, 7, 4, 1 ];
 function BirdWatcher(){
-          return birdsPerDay2.length-1;
+          let res = birdsPerDay2[birdsPerDay2.length-1]
+          return res;
 }
 console.log("---------Answer 2---------------")
 console.log(BirdWatcher())
