@@ -25,3 +25,16 @@ console.log(BirdWatcher())
 // BirdWatcher birdCount = new BirdWatcher(birdsPerDay);
 // birdCount.getToday();
 // // => 1
+// 3. Increment today's count
+// Implement the BirdWatcher.incrementTodaysCount() method to increment today's count:
+
+// int[] birdsPerDay = { 2, 5, 0, 7, 4, 1 };
+// BirdWatcher birdCount = new BirdWatcher(birdsPerDay);
+// birdCount.incrementTodaysCount();
+// birdCount.getToday();
+// // => 2
+function BirdWatcher2(){
+    return (birdsPerDay2.length-1) + 1;
+  }
+  console.log("---------Answer 3---------------")
+  console.log(BirdWatcher2())
