@@ -1,6 +1,8 @@
 // nstructions
 // You're an avid bird watcher that keeps track of how many birds have visited your garden in the last seven days.
 
+const { reduce } = require("bluebird");
+
 // You have six tasks, all dealing with the numbers of birds that visited your garden.
 
 // 1. Check what the counts were last week
@@ -35,7 +37,7 @@ console.log(BirdWatcher())
 // birdCount.getToday();
 // // => 2
 function BirdWatcher2(){
-    return (birdsPerDay2.length-1) + 1;
+    return birdsPerDay2[birdsPerDay2.length-1] + 1;
   }
   console.log("---------Answer 3---------------")
   console.log(BirdWatcher2())
@@ -64,7 +66,16 @@ function BirdWatcher3(){
     // BirdWatcher birdCount = new BirdWatcher(birdsPerDay);
     // birdCount.getCountForFirstDays(4);
     // // => 14
+    let num = 3
+    let sum = 0;
+    function Birdwatcher4(){
+        for(let i=0;i<=num;i++){
+            sum = sum + birdsPerDay2[i];
+        }
+        return sum;
+    }
     console.log("---------Answer 5---------------")
+    console.log(Birdwatcher4())
     // 6. Calculate the number of busy days
     // Some days are busier that others. A busy day is one where five or more birds have visited your garden. Implement the BirdWatcher.getBusyDays() method to return the number of busy days:
     
@@ -72,4 +83,14 @@ function BirdWatcher3(){
     // BirdWatcher birdCount = new BirdWatcher(birdsPerDay);
     // birdCount.getBusyDays();
     // // => 2
+    let count = 0;
+    function BirdWatcher5(){
+        for(let i=0;i<birdsPerDay2.length;i++){
+            if(birdsPerDay2[i] >= 5){
+              count++ ;
+            }
+        }
+        return count;
+    }
     console.log("---------Answer 6---------------")
+    console.log(BirdWatcher5())
